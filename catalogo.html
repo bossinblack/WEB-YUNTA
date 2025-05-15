@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Yunta Mayorista - Catálogo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+        <div class="container">
+            <span><i class="fas fa-phone"></i> 0800-123-4567</span>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo-la-yunta.png" alt="La Yunta Mayorista" width="220">
+                <span class="logo-slogan">Fanáticos del ahorro</span>
+            </a>
+            
+            <div class="header-promo">
+                <div class="promo-badge">
+                    <i class="fas fa-bolt"></i> OFERTA SEMANAL
+                </div>
+                <p>¡Esta semana hasta 40% off en limpieza!</p>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li class="active"><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Nosotros</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                    <li><a href="franquicias.html">Franquicias</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="fidelizacion.html">Club La Yunta</a></li>
+                    <li><a href="contacto.html" class="highlight-nav">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Contenido principal del catálogo -->
+    <main class="catalog-main">
+        <section class="catalog-header">
+            <div class="container">
+                <h1 class="page-title">Catálogo de Productos</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Inicio</a> / <span>Catálogo</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-content">
+            <div class="container">
+                <div class="catalog-tools">
+                    <div class="search-filter">
+                        <input type="text" placeholder="Buscar producto..." class="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="filter-selectors">
+                        <select class="category-filter">
+                            <option value="all">Todas las categorías</option>
+                            <option value="limpieza">Limpieza</option>
+                            <option value="bebidas">Bebidas</option>
+                            <option value="alimentos">Alimentos</option>
+                        </select>
+                        
+                        <select class="sort-filter">
+                            <option value="price-asc">Precio: Menor a Mayor</option>
+                            <option value="price-desc">Precio: Mayor a Menor</option>
+                            <option value="popular">Más populares</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="catalog-products-grid">
+                    <!-- Producto 1 -->
+                    <article class="product-card">
+                        <div class="product-badge">OFERTA</div>
+                        <img src="ASSETS/IMAGES/PRODUCTS/limpieza1.jpg" alt="Detergente Multiuso" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Detergente Multiuso 5L</h3>
+                            <p class="product-brand">Marca Propia</p>
+                            <div class="product-pricing">
+                                <span class="current-price">$1.599</span>
+                                <span class="old-price">$2.399</span>
+                                <span class="discount">-33%</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+                                <button class="btn-detail"><i class="fas fa-info-circle"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Producto 2 -->
+                    <article class="product-card">
+                        <img src="ASSETS/IMAGES/PRODUCTS/gaseosas.jpeg" alt="Pack Gaseosas" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Pack Gaseosas x6</h3>
+                            <p class="product-brand">Coca-Cola</p>
+                            <div class="product-pricing">
+                                <span class="current-price">$2.999</span>
+                                <span class="unit-price">($499/unidad)</span>
+                            </div>
+                            <div class="product-stock">
+                                <i class="fas fa-box-open"></i> Últimas 50 unidades
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn add-to-cart"><i class="fas fa-cart-plus"></i> Agregar</button>
+                                <button class="btn-detail"><i class="fas fa-info-circle"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Más productos... -->
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="page-link active">1</a>
+                    <a href="#" class="page-link">2</a>
+                    <a href="#" class="page-link">3</a>
+                    <span class="page-link">...</span>
+                    <a href="#" class="page-link">10</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>La Yunta Mayorista</h3>
+                    <p>Fanáticos del ahorro desde 1995. Brindando la mejor calidad y servicio a nuestros clientes.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-envelope"></i> info@layuntamayorista.com</p>
+                    <p><i class="fas fa-phone"></i> 0800-123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 1234, CABA</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Horarios</h3>
+                    <p>Lunes a Viernes: 8:00 - 21:00</p>
+                    <p>Sábados: 9:00 - 20:00</p>
+                    <p>Domingos: 10:00 - 18:00</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 La Yunta Mayorista. Todos los derechos reservados.</p>
+                <div class="legal-links">
+                    <a href="privacidad.html">Política de Privacidad</a>
+                    <a href="terminos.html">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>
